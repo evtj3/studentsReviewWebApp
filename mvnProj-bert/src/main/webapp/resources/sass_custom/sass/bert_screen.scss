@@ -1,0 +1,347 @@
+@import "compass/reset";
+$fontTitle:times new roman;
+$fontMenu:arial;
+$fontColor:#ffffff;
+$bgColor:rgb(10,35,61);
+$formPaddingRight:135px;
+$formPaddingTop:30px;
+$formPaddingRightCon:135px;
+$inputMarginTop:15px;
+$thumbnailMarginLeft:25px;
+$commonColor:rgb(64,119,242);
+$siteColor:rgb(10,35,65);
+@font-face{
+  /*
+  customize fonts in icomoon
+  customize icons
+  font-family:'icomoon';
+  src:url('../fonts/icomoon.eot?lb');
+  src: url() format('')
+  url();
+  svg supports on all browsers
+  font-weight:normal; text or number
+  font-style:normal;
+  */
+}
+@keyframes submit_animation {
+  from{
+    background-color:$bgColor;
+  }
+  to{
+    background-color:$fontColor;
+  }
+}
+body{
+  footer{
+    float: left;
+    text-align: left;
+    width: 80%;
+    margin-top: 20px;
+    padding: 20px 10%;
+    border-top: 1px solid #444241;
+    font-family:$fontMenu;
+    ul{
+      float: left;
+      width: 20%;
+      .foot-line{
+        width: 40%;
+        height: 2px;
+        margin: 10px 0px;
+        background-color: $commonColor;
+      }
+      li{
+        margin-top: 5px;
+        a{
+          color: $siteColor;
+          font-weight: bold;
+          text-decoration: none;
+        }
+      }
+      ul{
+        li{
+          a{
+            font-weight: normal;
+          }
+          a:hover{
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    #last-list{
+      li{
+        display: inline-block;
+        padding: 2px;
+        width: 100%;
+        a:hover{
+          text-decoration: underline;
+        }
+        div{
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .bullet{
+          border-radius: 25px;
+          height: 25px;
+          width: 25px;
+          background-color: $commonColor;
+        }
+        .foot-link{
+          width: auto;
+          padding-left: 10px;
+        }
+      }
+    }
+  }
+  header{
+    margin-bottom:60px;
+    background-color:$bgColor;
+    color:$fontColor;
+    .border-menu {
+      position: relative;
+      padding-left: 1.25em;
+      font-size:40px;
+    }
+    .border-menu:before {
+      content: "";
+      position: absolute;
+      top: 63px;
+      left: 40px;
+      width: 1em;
+      height: 0.125em;
+      border-top: 0.375em double $fontColor;
+      border-bottom: 0.125em solid $fontColor;
+    }
+    .website-name{
+      font-family:$fontTitle;
+      font-size:50px;
+      padding:50px;
+      display: inline-block;
+      letter-spacing: 5px;
+      margin-left:65px;
+    }
+    .menu-links{
+      font-family:$fontMenu;
+      display: inline-block;
+      vertical-align: middle;
+      font-size:25px;
+      margin-top:-25px;
+      ul{
+        li{
+          display: inline-block;
+          padding:20px;
+          letter-spacing: 5px;
+        }
+        a{
+          text-decoration: none;
+          color: $fontColor;
+        }
+      }
+    }
+    .menu-links ul li:hover > a{
+      color:$bgColor;
+    }
+    .menu-links ul> li:hover{
+      background-color: white;
+      transition: background 300ms ease-in;
+    }
+    .search-bar{
+      margin-left:150px;
+      vertical-align: middle;
+      display: inline-block;
+
+    }
+  }
+  .postCode-form{
+    display: inline-block;
+    float:left;
+    width: 70%;
+    border-right:solid 1px  #0a233d;
+    #errorMsg{
+      opacity: 0;
+      display: inline-block;
+      margin-left:10px;
+      background-color: $bgColor;
+      padding:5px 15px 5px 15px;
+      color:$fontColor;
+      font-family: Arial;
+      border-radius:5px;
+    }
+    h1{
+      color:$bgColor;
+      font-size:43px;
+      padding-left:$formPaddingRight;
+      padding-top:$formPaddingTop;
+      font-family:$fontMenu;
+    }
+    p{
+      padding-left:$formPaddingRightCon;
+      font-size:35px;
+      padding-top:$formPaddingTop;
+      font-family:sans-serif;
+      color:$bgColor;
+      line-height:40px;
+      width: 566px;
+    }
+    .post-code-input{
+      border-radius: 30px;
+      border:solid 2px $commonColor;
+      display:inline;
+      padding:10px;
+      margin-left:$formPaddingRightCon;
+      input[type="text"] {
+        margin-top: $inputMarginTop;
+        width: 135px;
+        font-size: 18px;
+        border: none;
+      }
+    }
+    input[type="submit"] {
+      margin-top: $inputMarginTop;
+      width: 200px;
+      font-size: 30px;
+      border: none;
+      padding:10px;
+      border-radius: 30px;
+      background-color:$bgColor;
+      color:#ffffff;
+      float:right;
+      margin-right:100px;
+      cursor: pointer;
+    }
+
+    .wrapper{
+      cursor:pointer;
+      width: 109px;
+      margin-top:$inputMarginTop;
+      margin-left:$formPaddingRightCon;
+      border-radius:30px;
+      input[type="radio"]{
+        cursor:pointer;
+        display:inline-block;
+        position: absolute;
+        opacity:0;
+        margin-left:18px;
+        margin-top: 16px;
+        &+ .confirming-radius{
+          cursor:pointer;
+          //color:$fontColor;
+          color:rgb(64,119,242);
+          padding: 10px;
+          background-color: $fontColor;
+          border:solid 2px $commonColor;
+          border-radius:30px;
+          span{
+            border:solid 2px $commonColor;
+            border-radius: 30px;
+            padding-top:3px;
+            padding-bottom:1px;
+            i{
+              margin-left:4px;
+              margin-top:-5px;
+              background-color:$commonColor;
+              width:13px;
+              display: inline-block;
+              height: 13px;
+              border-radius: 30px;
+              vertical-align: middle;
+            }
+          }
+          div{
+            display: inline-block;
+            margin-left:20px;
+            font-family: $fontMenu;
+            font-size:20px;
+          }
+        }
+        &:checked{
+          &+ div.confirming-radius{
+            background-color:$commonColor;
+            span {
+              border: solid 2px $fontColor;
+              i {
+                background-color: $fontColor;
+              }
+            }
+            div{
+              color:$fontColor;
+            }
+          }
+        }
+      }
+
+    }
+  }
+  .sideBar-data{
+    display: inline-block;
+    width:20%;
+    h1{
+      margin-left:$thumbnailMarginLeft;
+      margin-top:$thumbnailMarginLeft + 20px;
+      font-size:30px;
+      font-family:arial;
+      margin-bottom:$thumbnailMarginLeft;
+    }
+    .thumbnail{
+      width: 300px;
+      .line-img{
+        background-color: $commonColor;
+        width: 80%;
+        height: 10px;
+        margin-left:$thumbnailMarginLeft;
+        margin-bottom:10px;
+      }
+      img{
+        width: 80%;
+        margin-left:$thumbnailMarginLeft;
+      }
+      .title-data{
+        //is not good for dynamic website
+        //good for icons
+        //content:"Vestibulum sit amet tempor orci";
+        font-size:20px;
+        width: 240px;
+
+        //padding-top:47px;
+        //padding-bottom:48px;
+        background-color: rgba(0, 0, 0, 0.4);
+        margin-left:$thumbnailMarginLeft;
+        position: absolute;
+        color:#ffffff;
+        text-align: center;
+        padding-top:47px;
+        padding-bottom:47px;
+      }
+      a{
+        text-decoration: none;
+        font-family:$fontMenu;
+        width: 80px;
+        margin-left:$thumbnailMarginLeft;
+        font-size:12px;
+        background-color: rgba(64,119,242,0.6);
+        padding:8px;
+        color:#ffffff;
+        position: absolute;
+        display: block;
+        margin-top:-31px;
+      }
+      p{
+
+        margin-top:30px;
+        margin-bottom:20px;
+        margin-left:$thumbnailMarginLeft;
+        font-size:22px;
+        font-family:sans-serif;
+        color: rgb(176, 176, 176);
+      }
+    }
+  }
+}
+/* for responsive website */
+@media screen and (max-width:810px){
+  //screen is for screen devices
+  //print is for the printer screen
+  body{
+    background-color: red;
+  }
+}

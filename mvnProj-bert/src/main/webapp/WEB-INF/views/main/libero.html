@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="resources/sass_custom/stylesheets/bert_screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<header>
+    <div class="border-menu"></div>
+    <section class="website-name">LIBERO</section>
+    <section class="menu-links">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">EVENTS</a></li>
+            <li><a href="#">WORLD</a></li>
+        </ul>
+    </section>
+    <section class="search-bar">
+        <input type="text" name="search_bar" value=""/>
+    </section>
+</header>
+<form action="/main" method="POST">
+    <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+    <section class="postCode-form">
+        <!--
+            <p>Count numbers: <output id="result"></output></p>
+            <button onclick="startWorker()">Start Worker</button>
+            <button onclick="stopWorker()">Stop Worker</button>
+        -->
+        <h1>How do you feel about recycling?</h1>
+        <p>Postcode:</p>
+        <div class="post-code-input"><input id="postCode" type="text" name="post_code"></div>
+        <div id="errorMsg"></div>
+        <div id="ajaxContent"></div>
+        <p>Should the government start enforcing garbage separation and recycling schemes across your area?</p>
+        <label for="yes">
+            <div class="wrapper">
+                <input id="yes" type="radio" name="confirming" value="Yes"/>
+                <div class="confirming-radius">
+                    <span>
+                        <i class="radio-btn"></i>
+                    </span>
+                    <div>Yes</div>
+                </div>
+            </div>
+        </label>
+        <label for="no">
+            <div class="wrapper">
+                <input id="no" type="radio" name="confirming" value="No" onclick="clickRadio()"/>
+                <div class="confirming-radius">
+                    <span>
+                        <i class="radio-btn"></i>
+                    </span>
+                    <div>No</div>
+                </div>
+            </div>
+        </label>
+        <input id="submit-btn" class="submit-btn" type="submit" name="submit_btn" value="Submit" onclick="checkLocalStorage()" />
+    </section>
+</form>
+<section class="sideBar-data">
+    <h1>Phasellus augue sapien</h1>
+    <div class="thumbnail">
+        <div class="line-img"></div>
+        <div class="title-data">Fermentum Fermentum Neques</div>
+        <img src="resources/sass_custom/images/gov_form/1b.jpeg" alt="this is an alternative text"/>
+        <a href="#">Read more >></a>
+        <p>This is a caption for now</p>
+    </div>
+    <div class="thumbnail">
+        <div class="line-img"></div>
+
+        <div class="title-data">Fermentum Fermentum Neques</div>
+        <img src="resources/sass_custom/images/gov_form/1b.jpeg" alt="this is an alternative text"/>
+        <a href="#">Read more >></a>
+        <p>This is a caption for now</p>
+    </div>
+</section>
+<footer>
+    <ul class="first-list">
+        <li><a href="#">Rutrum</a></li>
+        <li class="foot-line">&nbsp;</li>
+        <ul>
+            <li><a href="#">Fermentum</a></li>
+            <li><a href="#">Neque</a></li>
+            <li><a href="#">Consequat</a></li>
+        </ul>
+    </ul>
+    <ul class="first-list">
+        <li><a href="#">Malesuada</a></li>
+        <li class="foot-line">&nbsp;</li>
+        <ul>
+            <li><a href="#">Tellus </a></li>
+            <li><a href="#">Condimentum </a></li>
+            <li><a href="#">Consectetur</a></li>
+        </ul>
+    </ul>
+    <ul class="first-list">
+        <li><a href="#">Pellentesque</a></li>
+        <li class="foot-line">&nbsp;</li>
+        <ul>
+            <li><a href="#">Habitant</a></li>
+            <li><a href="#">Morbi</a></li>
+            <li><a href="#">Tristique</a></li>
+        </ul>
+    </ul>
+    <ul class="first-list">
+        <li><a href="#">Quisque</a></li>
+        <li class="foot-line">&nbsp;</li>
+        <ul>
+            <li><a href="#">Pharetra</a></li>
+            <li><a href="#">Volutpat</a></li>
+            <li><a href="#">Volutpat</a></li>
+        </ul>
+    </ul>
+    <ul id="last-list" class="first-list">
+        <li><div class="bullet">&nbsp;</div><div class="foot-link"><a href="#">Phasellus</a></div></li>
+        <li><div class="bullet">&nbsp;</div><div class="foot-link"><a href="#">Augue</a></div></li>
+        <li><div class="bullet">&nbsp;</div><div class="foot-link"><a href="#">Sapien</a></div></li>
+    </ul>
+</footer>
+<!-- javascript codes -->
+<script src="resources/sass_custom/javascripts/jquery/jquery-1.9.js"></script>
+<script src="resources/sass_custom/javascripts/customs.js"></script> <!-- syntax for including external file javascript -->
+
+</body>
+</html>

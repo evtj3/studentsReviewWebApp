@@ -1,0 +1,24 @@
+{
+  "employees":{
+    "eLener@gmail.com":{
+      "firstName":"Elmer",
+      "lastName":"remle",
+      "birthDate":{
+        "month":"March",
+        "day":12,
+        "year":1992
+      },
+      "position":"Agent"
+    },
+    "aEllima@gmail.com":{
+      "firstName":"Amille",
+      "lastName":"ellima",
+      "birthDate":{
+        "month":"January",
+        "day":30,
+        "year":1989
+      },
+      "position":"Disk Jockey"
+    }
+  }
+}

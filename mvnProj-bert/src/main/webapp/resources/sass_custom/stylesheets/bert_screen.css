@@ -1,0 +1,424 @@
+/* line 5, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../../../../../../../../../../RailsInstaller/Ruby2.2.0/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+@font-face {
+  /*
+  customize fonts in icomoon
+  customize icons
+  font-family:'icomoon';
+  src:url('../fonts/icomoon.eot?lb');
+  src: url() format('')
+  url();
+  svg supports on all browsers
+  font-weight:normal; text or number
+  font-style:normal;
+  */
+}
+@keyframes submit_animation {
+  from {
+    background-color: #0a233d;
+  }
+  to {
+    background-color: #ffffff;
+  }
+}
+/* line 35, ../sass/bert_screen.scss */
+body footer {
+  float: left;
+  text-align: left;
+  width: 80%;
+  margin-top: 20px;
+  padding: 20px 10%;
+  border-top: 1px solid #444241;
+  font-family: arial;
+}
+/* line 43, ../sass/bert_screen.scss */
+body footer ul {
+  float: left;
+  width: 20%;
+}
+/* line 46, ../sass/bert_screen.scss */
+body footer ul .foot-line {
+  width: 40%;
+  height: 2px;
+  margin: 10px 0px;
+  background-color: #4077f2;
+}
+/* line 52, ../sass/bert_screen.scss */
+body footer ul li {
+  margin-top: 5px;
+}
+/* line 54, ../sass/bert_screen.scss */
+body footer ul li a {
+  color: #0a2341;
+  font-weight: bold;
+  text-decoration: none;
+}
+/* line 62, ../sass/bert_screen.scss */
+body footer ul ul li a {
+  font-weight: normal;
+}
+/* line 65, ../sass/bert_screen.scss */
+body footer ul ul li a:hover {
+  text-decoration: underline;
+}
+/* line 72, ../sass/bert_screen.scss */
+body footer #last-list li {
+  display: inline-block;
+  padding: 2px;
+  width: 100%;
+}
+/* line 76, ../sass/bert_screen.scss */
+body footer #last-list li a:hover {
+  text-decoration: underline;
+}
+/* line 79, ../sass/bert_screen.scss */
+body footer #last-list li div {
+  display: inline-block;
+  vertical-align: middle;
+}
+/* line 83, ../sass/bert_screen.scss */
+body footer #last-list li .bullet {
+  border-radius: 25px;
+  height: 25px;
+  width: 25px;
+  background-color: #4077f2;
+}
+/* line 89, ../sass/bert_screen.scss */
+body footer #last-list li .foot-link {
+  width: auto;
+  padding-left: 10px;
+}
+/* line 96, ../sass/bert_screen.scss */
+body header {
+  margin-bottom: 60px;
+  background-color: #0a233d;
+  color: #ffffff;
+}
+/* line 100, ../sass/bert_screen.scss */
+body header .border-menu {
+  position: relative;
+  padding-left: 1.25em;
+  font-size: 40px;
+}
+/* line 105, ../sass/bert_screen.scss */
+body header .border-menu:before {
+  content: "";
+  position: absolute;
+  top: 63px;
+  left: 40px;
+  width: 1em;
+  height: 0.125em;
+  border-top: 0.375em double #ffffff;
+  border-bottom: 0.125em solid #ffffff;
+}
+/* line 115, ../sass/bert_screen.scss */
+body header .website-name {
+  font-family: times new roman;
+  font-size: 50px;
+  padding: 50px;
+  display: inline-block;
+  letter-spacing: 5px;
+  margin-left: 65px;
+}
+/* line 123, ../sass/bert_screen.scss */
+body header .menu-links {
+  font-family: arial;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 25px;
+  margin-top: -25px;
+}
+/* line 130, ../sass/bert_screen.scss */
+body header .menu-links ul li {
+  display: inline-block;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+/* line 135, ../sass/bert_screen.scss */
+body header .menu-links ul a {
+  text-decoration: none;
+  color: #ffffff;
+}
+/* line 141, ../sass/bert_screen.scss */
+body header .menu-links ul li:hover > a {
+  color: #0a233d;
+}
+/* line 144, ../sass/bert_screen.scss */
+body header .menu-links ul > li:hover {
+  background-color: white;
+  transition: background 300ms ease-in;
+}
+/* line 148, ../sass/bert_screen.scss */
+body header .search-bar {
+  margin-left: 150px;
+  vertical-align: middle;
+  display: inline-block;
+}
+/* line 155, ../sass/bert_screen.scss */
+body .postCode-form {
+  display: inline-block;
+  float: left;
+  width: 70%;
+  border-right: solid 1px  #0a233d;
+}
+/* line 160, ../sass/bert_screen.scss */
+body .postCode-form #errorMsg {
+  opacity: 0;
+  display: inline-block;
+  margin-left: 10px;
+  background-color: #0a233d;
+  padding: 5px 15px 5px 15px;
+  color: #ffffff;
+  font-family: Arial;
+  border-radius: 5px;
+}
+/* line 170, ../sass/bert_screen.scss */
+body .postCode-form h1 {
+  color: #0a233d;
+  font-size: 43px;
+  padding-left: 135px;
+  padding-top: 30px;
+  font-family: arial;
+}
+/* line 177, ../sass/bert_screen.scss */
+body .postCode-form p {
+  padding-left: 135px;
+  font-size: 35px;
+  padding-top: 30px;
+  font-family: sans-serif;
+  color: #0a233d;
+  line-height: 40px;
+  width: 566px;
+}
+/* line 186, ../sass/bert_screen.scss */
+body .postCode-form .post-code-input {
+  border-radius: 30px;
+  border: solid 2px #4077f2;
+  display: inline;
+  padding: 10px;
+  margin-left: 135px;
+}
+/* line 192, ../sass/bert_screen.scss */
+body .postCode-form .post-code-input input[type="text"] {
+  margin-top: 15px;
+  width: 135px;
+  font-size: 18px;
+  border: none;
+}
+/* line 199, ../sass/bert_screen.scss */
+body .postCode-form input[type="submit"] {
+  margin-top: 15px;
+  width: 200px;
+  font-size: 30px;
+  border: none;
+  padding: 10px;
+  border-radius: 30px;
+  background-color: #0a233d;
+  color: #ffffff;
+  float: right;
+  margin-right: 100px;
+  cursor: pointer;
+}
+/* line 213, ../sass/bert_screen.scss */
+body .postCode-form .wrapper {
+  cursor: pointer;
+  width: 109px;
+  margin-top: 15px;
+  margin-left: 135px;
+  border-radius: 30px;
+}
+/* line 219, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"] {
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  opacity: 0;
+  margin-left: 18px;
+  margin-top: 16px;
+}
+/* line 226, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"] + .confirming-radius {
+  cursor: pointer;
+  color: #4077f2;
+  padding: 10px;
+  background-color: #ffffff;
+  border: solid 2px #4077f2;
+  border-radius: 30px;
+}
+/* line 234, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"] + .confirming-radius span {
+  border: solid 2px #4077f2;
+  border-radius: 30px;
+  padding-top: 3px;
+  padding-bottom: 1px;
+}
+/* line 239, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"] + .confirming-radius span i {
+  margin-left: 4px;
+  margin-top: -5px;
+  background-color: #4077f2;
+  width: 13px;
+  display: inline-block;
+  height: 13px;
+  border-radius: 30px;
+  vertical-align: middle;
+}
+/* line 250, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"] + .confirming-radius div {
+  display: inline-block;
+  margin-left: 20px;
+  font-family: arial;
+  font-size: 20px;
+}
+/* line 258, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"]:checked + div.confirming-radius {
+  background-color: #4077f2;
+}
+/* line 260, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"]:checked + div.confirming-radius span {
+  border: solid 2px #ffffff;
+}
+/* line 262, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"]:checked + div.confirming-radius span i {
+  background-color: #ffffff;
+}
+/* line 266, ../sass/bert_screen.scss */
+body .postCode-form .wrapper input[type="radio"]:checked + div.confirming-radius div {
+  color: #ffffff;
+}
+/* line 275, ../sass/bert_screen.scss */
+body .sideBar-data {
+  display: inline-block;
+  width: 20%;
+}
+/* line 278, ../sass/bert_screen.scss */
+body .sideBar-data h1 {
+  margin-left: 25px;
+  margin-top: 45px;
+  font-size: 30px;
+  font-family: arial;
+  margin-bottom: 25px;
+}
+/* line 285, ../sass/bert_screen.scss */
+body .sideBar-data .thumbnail {
+  width: 300px;
+}
+/* line 287, ../sass/bert_screen.scss */
+body .sideBar-data .thumbnail .line-img {
+  background-color: #4077f2;
+  width: 80%;
+  height: 10px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+}
+/* line 294, ../sass/bert_screen.scss */
+body .sideBar-data .thumbnail img {
+  width: 80%;
+  margin-left: 25px;
+}
+/* line 298, ../sass/bert_screen.scss */
+body .sideBar-data .thumbnail .title-data {
+  font-size: 20px;
+  width: 240px;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin-left: 25px;
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 47px;
+  padding-bottom: 47px;
+}
+/* line 315, ../sass/bert_screen.scss */
+body .sideBar-data .thumbnail a {
+  text-decoration: none;
+  font-family: arial;
+  width: 80px;
+  margin-left: 25px;
+  font-size: 12px;
+  background-color: rgba(64, 119, 242, 0.6);
+  padding: 8px;
+  color: #ffffff;
+  position: absolute;
+  display: block;
+  margin-top: -31px;
+}
+/* line 328, ../sass/bert_screen.scss */
+body .sideBar-data .thumbnail p {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  font-size: 22px;
+  font-family: sans-serif;
+  color: #b0b0b0;
+}
+
+/* for responsive website */
+@media screen and (max-width: 810px) {
+  /* line 344, ../sass/bert_screen.scss */
+  body {
+    background-color: red;
+  }
+}
